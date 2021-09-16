@@ -29,5 +29,18 @@ public class Hello {
     // % is remainder, not "mod"
     // must INITIALIZE before reading
     System.out.println(x);
+
+    long z = 3_000_000_000L;
+//    short s = 31567;
+    short s = 3;
+    short t = 4;
+//    short u = s + t; // fails, result type is int
+    short u = (short)(s + t); // casts can fix some problems
+
+    // Java 10 introduces type inference for variable declaration
+//    int a = 10;
+//    var a = 10; // still produces an int variable
+//    a = 1234L;
+//    a = "Hello";
   }
 }
